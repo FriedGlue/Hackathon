@@ -16,4 +16,3 @@ export type RouteError = Error & {
     statusText?: string;
     status?: string;
 };
-  

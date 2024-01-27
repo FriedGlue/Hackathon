@@ -1,6 +1,6 @@
 import useFetchData from '../hooks/useFetchData.tsx'; // adjust the path as needed
 import Dashboard from '../components/Dashboard/Dashboard.tsx';
-import Hero from '../components/Heros/AppHero.tsx';
+import Hero from '../components/Dashboard/Hero/Hero.tsx';
 
 const apiUrl = import.meta.env.VITE_API_URL;
 
