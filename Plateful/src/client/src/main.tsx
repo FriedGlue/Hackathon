@@ -5,11 +5,11 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import './index.css';
 
-import App from './routes/App';
-import Index from './routes/Index';
+import App from './pages/App';
+import Index from './pages/Index';
 import NavbarScroll from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import ErrorPage from './routes/ErrorPage';
+import ErrorPage from './pages/ErrorPage';
 
 // Higher-Order Component for wrapping pages with the layout
 const withLayout = (Component: React.ComponentType) => (
