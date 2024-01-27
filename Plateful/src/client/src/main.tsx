@@ -20,7 +20,7 @@ const withLayout = (Component: React.ComponentType) => (
   </React.Fragment>
 );
 
-// Define yroutes, using the HOC directly as JSX
+// Define routes, using the HOC directly as JSX
 const router = createBrowserRouter([
   {
     path: "/",
