@@ -7,7 +7,7 @@ function LandingPage() {
   return (
     <>
       <Navbar />
-      <div className='flex flex-col h-screen justify-center items-center'>
+      <div className='flex flex-col h-screen justify-center items-center bg-[#EBDAC5]'>
         <img src={logo} alt="Logo" className="w-80 mb-2 lg:w-96" />
         <h2 className='font-sans text-2xl mt-4'>Bring Balance To Your Plate</h2>
         <div className='flex flex-col lg:flex-row justify-center items-center mt-10 lg:space-x-4'> {/* Added mt-8 for margin-top */}
