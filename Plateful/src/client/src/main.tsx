@@ -1,6 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './output.css'
+
+// import App from './App.tsx';
+import LandingPage from './pages/Landing/LandingPage.tsx'
+import Navbar from './components/navbar.tsx';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css'
 
@@ -15,7 +21,10 @@ import ErrorPage from './pages/ErrorPage';
 const withLayout = (Component: React.ComponentType) => (
   <React.Fragment>
     {/* <NavbarScroll /> */}
-    <main><Component /></main>
+    <main className='bg-[#EBDAC5] h-screen'>
+      <Navbar />
+      <Component />
+      </main>
     {/* <Footer /> */}
   </React.Fragment>
 );
