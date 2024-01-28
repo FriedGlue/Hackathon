@@ -1,0 +1,15 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+.card-wrapper {
+    flex-basis: calc(33.333% - 20px); /* Adjust for three cards per row */
+    margin: 10px; /* Adjust margin for spacing */
+    margin-bottom: 3rem; /* Provide bottom margin for spacing between cards */
+}
+
+.red-button {
+    background-color: #A63B3B;
+}
