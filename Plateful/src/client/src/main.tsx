@@ -1,17 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './output.css'
-
-// import App from './App.tsx';
-import LandingPage from './pages/Landing/LandingPage.tsx'
-import Navbar from './components/navbar.tsx';
-
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css'
 
 // import App from './App.tsx';
-import Reasturants from './pages/Dashboard/Dashboard.tsx'
+import LandingPage from './pages/Landing/LandingPage.tsx';
+import Dashboard from './pages/Dashboard/Dashboard.tsx'
 // import Index from './routes/Index';
 // import NavbarScroll from './components/Navbar/Navbar';
 // import Footer from './components/Footer/Footer';
@@ -21,24 +16,21 @@ import ErrorPage from './pages/ErrorPage';
 const withLayout = (Component: React.ComponentType) => (
   <React.Fragment>
     {/* <NavbarScroll /> */}
-    <main className='bg-[#EBDAC5] h-screen'>
-      <Navbar />
-      <Component />
-      </main>
+    <main><Component /></main>
     {/* <Footer /> */}
   </React.Fragment>
 );
 
 // Define routes, using the HOC directly as JSX
 const router = createBrowserRouter([
-  // {
-    // path: "/",
-    // element: withLayout(Index), // Directly use the HOC as JSX
-    // errorElement: <ErrorPage />,
-  // },
   {
     path: "/",
-    element: withLayout(Reasturants), // Directly use the HOC as JSX
+    element: withLayout(LandingPage), // Directly use the HOC as JSX
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/Restaurants",
+    element: withLayout(Dashboard), // Directly use the HOC as JSX
     errorElement: <ErrorPage />,
   },
 ]);
