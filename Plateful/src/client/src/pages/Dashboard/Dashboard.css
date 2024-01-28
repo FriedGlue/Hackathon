@@ -1,0 +1,48 @@
+.dashboard-container {
+  display: flex; /* Changed from grid to flex */
+  flex-direction: column; /* Stack children vertically */
+  gap: 20px; /* Adjust space between flex items */
+  padding: 20px; /* Padding around the container */
+}
+
+.dashboard-header {
+  text-align: center; /* Center the header content */
+}
+
+.dashboard-content {
+  display: flex; /* Changed from grid to flex */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center the cards within the content area */
+}
+
+.card {
+  width: 18rem;
+  text-align: center; /* Center text and button */
+  border-radius: 10px; /* Rounded corners for the card */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow to the card */
+  overflow: hidden; /* Ensures the content fits within the rounded corners */
+  margin-bottom: .5rem; /* Provide bottom margin for spacing between cards */
+}
+
+.card-img-top {
+  height: 150px;
+  width: auto; /* Let the image width be auto so it scales with the height */
+  object-fit: contain;
+  margin: 0 auto; /* Center the image within the card */
+}
+
+.card-body {
+  padding: 0.5rem; /* Reduce padding to match the uploaded image */
+}
+
+.card-title {
+  font-size: 1rem; /* Adjust font size as needed */
+  font-weight: bold; /* Make the title bold */
+}
+
+.full-width-button {
+  width: 100%; /* Make the button span the full width of the card */
+  margin-top: auto; /* Push the button to the bottom */
+  border-radius: 0.25rem;
+}

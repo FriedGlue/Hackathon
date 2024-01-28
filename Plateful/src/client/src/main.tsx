@@ -6,6 +6,12 @@ import './output.css'
 // import App from './App.tsx';
 import LandingPage from './pages/Landing/LandingPage.tsx'
 import Navbar from './components/navbar.tsx';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import './index.css'
+
+// import App from './App.tsx';
+import Reasturants from './pages/Dashboard/Dashboard.tsx'
 // import Index from './routes/Index';
 // import NavbarScroll from './components/Navbar/Navbar';
 // import Footer from './components/Footer/Footer';
@@ -32,7 +38,7 @@ const router = createBrowserRouter([
   // },
   {
     path: "/",
-    element: withLayout(LandingPage), // Directly use the HOC as JSX
+    element: withLayout(Reasturants), // Directly use the HOC as JSX
     errorElement: <ErrorPage />,
   },
 ]);
