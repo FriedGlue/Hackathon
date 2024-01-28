@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi"
 import { BsX } from "react-icons/bs"
