@@ -9,7 +9,7 @@ interface Card {
 }
 
 const CardContainer: React.FC = () => {
-  const [cards, setCards] = useState<Card[]>([
+  const [cards] = useState<Card[]>([
     { id: 1, title: 'Chick-fil-a',  image: Shafer},
     { id: 2, title: 'Shafer',  image: Shafer},
     { id: 3, title: 'Shake Smart', image: Shafer},

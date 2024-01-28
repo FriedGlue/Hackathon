@@ -1,10 +1,8 @@
-import React from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import ProgressProvider from './ProgressProvider';
 
 const RadialGraph = () => {
-  const percentage = 60;
   const calories = 854;
 
   return (
